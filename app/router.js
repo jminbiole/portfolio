@@ -7,6 +7,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('portfolio', {path: '/'}, function() {
+  this.route('main-page');
+  this.route('landing-page');
+});
 });
 
 export default Router;

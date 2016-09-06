@@ -37,6 +37,7 @@
     "ember-cli-qunit": "^2.0.0",
     "ember-cli-release": "^0.2.9",
     "ember-cli-sass": "5.5.1",
+    "ember-cli-slick": "1.0.14",
     "ember-cli-sri": "^2.1.0",
     "ember-cli-test-loader": "^1.1.0",
     "ember-cli-uglify": "^1.2.0",
@@ -53,6 +54,7 @@
     "ember-truth-helpers": "1.2.0",
     "eslint-config-rtablada": "^3.0.0",
     "eslint-plugin-import": "^1.13.0",
+    "liquid-fire": "0.24.1",
     "loader.js": "^4.0.1"
   }
 }
