@@ -68,7 +68,7 @@
 .textbox__about {
   width: calc(100% / 2);
   padding: 1rem 3rem;
-
+  font-size: 1.5rem;
 }
 .hero__projects {
   background-image: url('http://images.all-free-download.com/images/graphiclarge/wood_grain_backdrop_04_hd_pictures_170934.jpg');
