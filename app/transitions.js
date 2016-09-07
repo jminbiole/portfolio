@@ -1,9 +1,9 @@
-const time2 = 2000;
+const time2 = 3000;
 export default function(){
   this.transition(
     this.fromRoute('portfolio.landing-page'),
     this.toRoute('portfolio.main-page'),
-    this.use('crossFade', {
+    this.use('fade', {
       use: [`flyTo`, { time2 }],
     }),
     this.reverse('toRight', {

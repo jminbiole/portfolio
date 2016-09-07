@@ -10,43 +10,94 @@
   overflow: scroll;
 }
 .textbox__main {
-  padding: 3rem 6rem;
-  padding-bottom: 5rem;
-  width: 100%;
+  width: calc(100% / 3);
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  text-align: right;
+  position: relative;
+}
+@keyframes wat {
+  from {
+    opacity: 1;
+    z-index: 1;
+    transform: scale(1.5);
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+    transform: scale(.001);
+
+  }
+}
+.greeting {
+  animation: wat 6s forwards;
+  font-size: 4rem;
+  color: #fff;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0%;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .greeting__main {
+  animation: fadeIn 3s forwards;
   color: #fff;
   margin: 0;
 
 }
 .self-title {
+  animation: fadeIn 4s forwards;
   color: #fff;
+  text-align: right;
 }
 .hero__about {
   display: flex;
-  align-items: center;
   margin: 0;
 }
 .textbox__about {
   width: calc(100% / 2);
+  padding: 1rem 3rem;
 
 }
-.about__pictures {
-  width: 100%;
+.hero__projects {
+  background-image: url('http://images.all-free-download.com/images/graphiclarge/wood_grain_backdrop_04_hd_pictures_170934.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title__project {
+  color: #fff;
+  padding: 2rem 3rem;
+  margin: 0;
+}
+.project-grid {
+  padding: 0 3rem;
   display: flex;
-  align-items: center;
-}
-.frame__parent {
-  width: calc(100% / 2);
-  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 100%;
 
-}
-.frame__slide {
-  width: 100%;
+  &__item {
+    min-width: 25rem;
+    max-height: 20rem;
+    width: calc(100% / 3 - 2rem - 2rem);
+    margin: 0 2rem 2rem 0;
+    flex-grow: 1;
 
-  &-img {
+  }
+
+  &__pic {
     width: 100%;
-    max-height: 100%;
-
+    max-height: 20rem;
   }
 }
