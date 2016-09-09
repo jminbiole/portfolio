@@ -2,7 +2,7 @@
   background-image: url('/images/first.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position:center;
+  background-position: center;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -27,7 +27,6 @@
     opacity: 0;
     z-index: -1;
     transform: scale(.001);
-
   }
 }
 .greeting {
@@ -50,54 +49,180 @@
     opacity: 1;
   }
 }
-.greeting__main {
-  animation: fadeIn 3s forwards;
-  color: #fff;
-  margin: 0;
+.title {
 
+  &__name {
+    animation: fadeIn 3s forwards;
+    color: #fff;
+    margin: 0;
+  }
+
+  &__self {
+    animation: fadeIn 4s forwards;
+    color: #fff;
+    text-align: right;
+  }
+
+  &__about {
+    margin: 0;
+  }
+
+  &__project {
+    margin: 0;
+    color: #fff;
+  }
+
+  &__contact {
+    margin: 0;
+  }
 }
-.self-title {
-  animation: fadeIn 4s forwards;
-  color: #fff;
-  text-align: right;
+.about-me {
+  background: #CFC9B4;
 }
-.hero__about {
+.hero {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
+  padding: 2rem;
+
+  &__skills {
+    flex-direction: column;
+  }
+
+  &__contact {
+    flex-direction: column;
+  }
+
+  &__footer {
+    padding: 1rem 2rem;
+  }
 }
+
+/*media query make backgroud grow to right size*/
+
 .textbox__about {
   width: calc(100% / 2);
-  padding: 1rem 3rem;
   font-size: 1.5rem;
+  min-width: 25rem;
+  margin-right: 1rem;
+  max-width: 30rem;
+  flex-grow: 1;
 }
-.hero__projects {
-  background-image: url('http://images.all-free-download.com/images/graphiclarge/wood_grain_backdrop_04_hd_pictures_170934.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.title__project {
-  color: #fff;
-  padding: 2rem 3rem;
+.background__about {
   margin: 0;
+  width: 100%;
+  padding: 1rem 0;
+}
+.slideshow__about {
+  width: calc(100% / 2);
+  flex-grow: 1;
+}
+
+@keyframes slide {
+  0% {
+    background-image: url('https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/12141583_10153715602859510_8965068547305096883_n.jpg?oh=c1a5c26fdc9c1ea491af416a1a4519a8&oe=5877F3C0');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  50% {
+    background-image: url("https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/12715621_10207229221721552_8951521647121534676_n.jpg?oh=82c00a2819cb16b68726699a30c9d251&oe=587DF3D3");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  100% {
+    background-image: url('/images/code.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+}
+.slideshow__item {
+  animation: slide 12s infinite;
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+}
+.slideshow__pic {
+  width: 100%;
+  height: inherit;
+}
+.projects {
+  background: #291C08;
 }
 .project-grid {
-  padding: 0 3rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 100%;
-
+  padding: 1rem 0;
+  /*media query on margin*/
   &__item {
     min-width: 25rem;
     max-height: 20rem;
     width: calc(100% / 3 - 2rem - 2rem);
     margin: 0 2rem 2rem 0;
     flex-grow: 1;
-
   }
-
   &__pic {
     width: 100%;
     max-height: 20rem;
   }
+}
+.skills {
+  background: #B59961;
+}
+.skills__title {
+  margin: 0;
+}
+.skills__container {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 15rem;
+}
+.skills-list {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  &__section {
+    width: calc(100% / 5);
+    min-width: 8rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__item {
+    font-size: 1.3rem;
+    padding-top: .5rem;
+    list-style: none;
+  }
+}
+.contact {
+  background: #CFC9B4;
+
+  &__sources {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+}
+.box {
+  min-width: 7rem;
+  color: #CFC9B4;
+  font-size: 1.2rem;
+  text-align: center;
+  border-radius: 3%;
+  background: #291C08;
+  border-left: .3rem solid #BC6213;
+  border-right: .3rem solid #BC6213;
+  padding: 1rem 4rem;
+  margin-bottom: .5rem;
+}
+
+footer {
+  background: #291C08;
+  color: #CFC9B4;
+
 }
