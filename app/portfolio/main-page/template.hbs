@@ -10,9 +10,9 @@
     <div class="hero">
       <div class="textbox__about">
         <h1 class="title__about">About Me</h1>
-        <p class="background__about">I am a father of two boys and husband to a beautiful woman. I am a cook and a gaming nerd or enthusiast as I prefer. I love solving puzzles and the "think on your feet" of the multiplayer experience. I graduated from The Iron Yard in pursuit of a more fulfilling
-          and rewarding career in the tech industry. Now, I am a web developer who loves coding and I use my love of video game problem solving and quick thinking to overcome issues that arise in code. I had very little coding experience prior to TIY
-          but after working in the agile environment and learning directly from a senior developer, I have the skills to make a great addition to a team. I am Front End focused but plan on learning Back End too so I can be a jack of all trades.</p>
+        <p class="background__about">I am a father of two boys and husband to a beautiful woman. I am a cook and a gaming nerd or enthusiast as I prefer. I love solving puzzles and the "think on your feet" of the multiplayer experience. I graduated from The Iron Yard in pursuit of
+          a more fulfilling and rewarding career in the tech industry. Now, I am a web developer who loves coding and I use my love of video game problem solving and quick thinking to overcome issues that arise in code. I had very little coding experience
+          prior to TIY but after working in the agile environment and learning directly from a senior developer, I have the skills to make a great addition to a team. I am Front End focused but plan on learning Back End too so I can be a jack of all trades.</p>
       </div>
       <div class="slideshow__about">
         <div class="slideshow__item">
@@ -80,15 +80,30 @@
     <div class="hero hero__contact">
       <h1 class="title__contact">Contact Me</h1>
       <div class="contact__sources">
-        <div class="box github">github</div>
-        <div class="box linked">LinkedIn</div>
-        <div class="box email">email</div>
-        <div class="box phone">phone</div>
+
+        <a href="https://github.com/jminbiole">
+          <div class="box github">github</div>
+        </a>
+        <a href="https://www.linkedin.com/in/jeff-minbiole-a46874b5">
+          <div class="box linked">LinkedIn</div>
+        </a>
+        <a href="mailto:minbiole.jeff@gmail.com?subject=Hello,%20Jeff!%20I%20like%20your%20portfolio!">
+          <div class="box email">email</div>
+        </a>
+        <button class="box box__phone isHideText" {{action 'display'}}>
+          <p class="box__phone-text ">
+            phone
+          </p>
+          {{#if isShowNumber}}
+            <span class="phone__show isShowNumber">615.788.4726</span>
+          {{/if}}
+        </button>
       </div>
     </div>
   </div>
   <footer>
     <div class="hero__footer">
+
       &copy; Jeffrey Minbiole 2016
     </div>
   </footer>
