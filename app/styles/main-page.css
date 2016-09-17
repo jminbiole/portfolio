@@ -30,7 +30,7 @@
   }
 }
 .greeting {
-  animation: wat 6s forwards;
+  animation: wat 5s forwards;
   font-size: 4rem;
   color: #fff;
   margin: 0;
@@ -68,7 +68,7 @@
   }
 
   &__project {
-    margin: 0;
+    margin: 0 0 1rem 0;
     color: #fff;
   }
 
@@ -84,6 +84,10 @@
   flex-wrap: wrap;
   margin: 0;
   padding: 2rem;
+
+  &.no-flex {
+    display: block;
+  }
 
   &__skills {
     padding: 3rem 2rem;
@@ -127,7 +131,7 @@
   }
   50% {
     background-image: url("https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/12715621_10207229221721552_8951521647121534676_n.jpg?oh=82c00a2819cb16b68726699a30c9d251&oe=587DF3D3");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
   }
   100% {
@@ -150,25 +154,102 @@
 .projects {
   background: #291C08;
 }
+
 .project-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 100%;
-  padding: 1rem 0;
+  height: 100vh;
+  /*padding: 1rem 0;*/
+  margin: -2rem;
+
   /*media query on margin*/
   &__item {
+    position: relative;
     min-width: 25rem;
+    height: 100%;
     max-height: 20rem;
-    width: calc(100% / 3 - 2rem - 2rem);
-    margin: 0 2rem 2rem 0;
-    flex-grow: 1;
+    width: calc(100% / 2 - 2rem - 2rem);
+    margin: 2rem;
+
+    &::before {
+      content: "";
+      display: block;
+      padding-top: calc(100% * 9 / 16);
+    }
   }
   &__pic {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
     width: 100%;
-    max-height: 20rem;
+    height: 100%;
+    /*max-height: 20rem;*/
+    display: block;
   }
 }
+
+
+.overlay {
+
+  &__title {
+    font-size: 2rem;
+    margin: 0;
+    padding: .5rem;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    padding: .5rem;
+    margin-bottom: .5rem;
+
+    &-button {
+      min-width: 4rem;
+      color: #CFC9B4;
+      font-size: 1rem;
+      text-align: center;
+      border-radius: 3%;
+      outline: none;
+      border: none;
+      background: #291C08;
+      border-left: .3rem solid #BC6213;
+      border-right: .3rem solid #BC6213;
+      padding: .5rem 2rem;
+      margin-bottom: .5rem;
+    }
+  }
+
+  &__about {
+    flex-grow: 1;
+    font-size: 1.4rem;
+    padding: .5rem;
+    margin: 0;
+
+  }
+
+  &__puppies, &__twitch {
+  display: flex;
+  flex-direction: column;
+  padding: 0 .5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  opacity: 0;
+  background: #B59961;
+  color: #000;
+  transition: opacity 800ms;
+
+
+  &:hover {
+    /*animation: display 1s forwards;*/
+    opacity: .9;
+  }
+}
+}
+
 .skills {
   background: #B59961;
 }
