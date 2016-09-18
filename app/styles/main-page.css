@@ -32,7 +32,7 @@
 .greeting {
   animation: wat 3s forwards;
   font-size: 4rem;
-  color: #fff;
+  color: #CFC9B4;
   margin: 0;
   position: absolute;
   top: 0;
@@ -49,17 +49,25 @@
     opacity: 1;
   }
 }
+.span {
+  &__name {
+    animation: fadeIn 2.5s forwards
+  }
+  &__self {
+    animation: fadeIn 4s forwards
+  }
+}
 .title {
 
   &__name {
     animation: fadeIn 2s forwards;
-    color: #fff;
+    color: #CFC9B4;
     margin: 0;
   }
 
   &__self {
-    animation: fadeIn 3s forwards;
-    color: #fff;
+    animation: fadeIn 3.5s forwards;
+    color: #CFC9B4;
     text-align: right;
   }
 
@@ -142,44 +150,12 @@
   }
 
   &-right {
-  margin: 0;
-  width: 100%;
-  padding: 0 1.5rem;
-}
-}
-.slideshow__about {
-  width: calc(100% / 2);
-  flex-grow: 1;
+    margin: 0;
+    width: 100%;
+    padding: 0 1.5rem;
+  }
 }
 
-@keyframes slide {
-  0% {
-    background-image: url('https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/12141583_10153715602859510_8965068547305096883_n.jpg?oh=c1a5c26fdc9c1ea491af416a1a4519a8&oe=5877F3C0');
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  50% {
-    background-image: url("https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/12715621_10207229221721552_8951521647121534676_n.jpg?oh=82c00a2819cb16b68726699a30c9d251&oe=587DF3D3");
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  100% {
-    background-image: url('/images/code.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-}
-.slideshow__item {
-  animation: slide 9s infinite;
-  width: 100%;
-  height: 100%;
-  flex-grow: 1;
-}
-.slideshow__pic {
-  width: 100%;
-  height: inherit;
-}
 .projects {
   background: #291C08;
 }
@@ -255,7 +231,7 @@
 
   }
 
-  &__puppies, &__twitch {
+  &__projects {
   display: flex;
   flex-direction: column;
   padding: 0 .5rem;
@@ -362,6 +338,90 @@ footer {
   text-align: center;
 
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1250px) {
+  .skills-list {
+    justify-content: center;
+    margin-left: 1rem;
 
+    &__section {
+      margin-left: .5rem;
+    }
+
+    &__item {
+      min-width: 10rem;
+      font-size: 1rem;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .greeting {
+    font-size: 2.5rem;
+    position: absolute;
+    top: 0;
+    left: 10%;
+  }
+  .contact__sources {
+    justify-content: center;
+  }
+  .hero {
+    &__about, &__skills {
+      padding: 1rem;
+    }
+  }
+  .no-flex {
+    padding: 1rem;
+  }
+  .textbox {
+
+    &__main {
+      margin-left: 1rem;
+      min-width: 10rem;
+    }
+
+    &__about {
+      font-size: 1rem;
+      justify-content: none;
+    }
+  }
+  .background__about {
+
+    &-left {
+      padding-left: 0;
+      padding-right: .75rem;
+    }
+    &-right {
+      padding-left: .75rem;
+      padding-right: 0;
+      margin-right: 1rem;
+    }
+    }
+  .project-grid {
+    margin-right: 1rem;
+    &__item {
+
+    }
+  }
+  .overlay {
+    &__title {
+      font-size: 1.3rem;
+      text-align: center;
+    }
+    &__about {
+      font-size: .8rem;
+      padding: 0 .5rem;
+    }
+  }
+  .skills-list {
+    justify-content: center;
+    margin-left: 1rem;
+
+    &__section {
+      margin-left: .5rem;
+    }
+
+    &__item {
+      min-width: 10rem;
+      font-size: 1rem;
+    }
+  }
 }
