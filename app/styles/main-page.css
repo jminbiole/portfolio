@@ -64,17 +64,26 @@
   }
 
   &__about {
-    margin: 0 0 1rem 0;
     text-align: center;
+    margin: 0 0 1rem 0;
+    color: #291C08;
   }
 
   &__project {
+    text-align: center;
     margin: 0 0 1rem 0;
-    color: #fff;
+    color: #CFC9B4;
+  }
+  &__skills {
+    text-align: center;
+    margin: 0;
+    color: #291C08;
   }
 
   &__contact {
+    text-align: center;
     margin: 0;
+    color: #291C08;
   }
 }
 .about-me {
@@ -119,7 +128,7 @@
   margin: 0 auto;
   font-size: 1.3rem;
   min-width: 25rem;
-  position: relative;
+  color: #291C08;
 }
 .background__about {
 
@@ -282,6 +291,8 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  color: #291C08;
+
   &__section {
     width: calc(100% / 5);
     min-width: 8rem;
