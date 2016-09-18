@@ -7,34 +7,40 @@
     </div>
   </div>
   <div class="about-me">
-    <div class="hero">
+    <div class="hero__about">
+      <h1 class="title__about">| About |</h1>
       <div class="textbox__about">
-        <h1 class="title__about">About Me</h1>
-        <p class="background__about">I am a father of two boys and husband to a beautiful woman. I am a cook and a gaming nerd or enthusiast as I prefer. I love solving puzzles and the "think on your feet" of the multiplayer experience. I graduated from The Iron Yard in pursuit of
-          a more fulfilling and rewarding career in the tech industry. Now, I am a web developer who loves coding and I use my love of video game problem solving and quick thinking to overcome issues that arise in code. I had very little coding experience
+        <p class="background__about-left"> I am a gaming nerd or enthusiast as I prefer. I love solving puzzles and the "think on your feet" of the multiplayer experience. I graduated from The Iron Yard in pursuit of
+          a more fulfilling and rewarding career in the tech industry. Now, I am a web developer who loves coding and I use my love of video game problem solving and</p>
+          <p class="background__about-right">quick thinking to overcome issues that arise in code. I had very little coding experience
           prior to TIY but after working in the agile environment and learning directly from a senior developer, I have the skills to make a great addition to your team. I am Front End focused but I am learning Back End too so I can be a jack of all trades.</p>
-      </div>
-      <div class="slideshow__about">
-        <div class="slideshow__item">
-        </div>
       </div>
     </div>
   </div>
   <div class="projects">
     <div class="hero no-flex">
-      <h1 class="title__project">Projects</h1>
+      <h1 class="title__project">| Projects |</h1>
       <div class="project-grid">
-        {{!-- <div class="project-grid__item 1">
-          <img class="project-grid__pic" src="https://s-media-cache-ak0.pinimg.com/564x/55/bf/e7/55bfe77d2f554f94f0c6e7bdd4dbc1de.jpg" alt="" />
-        </div> --}}
+
+        <div class="project-grid__item">
+          <img class="project-grid__pic" src="/images/degenerator.png" alt="" />
+          <div class="overlay__twitch">
+            <p class="overlay__title">The [de]generator</p>
+            <p class="overlay__about twitch">This is a photo sharing experience app where users can upload an image that is affected by each view it recieves. Users set the type of degeneration (filters) and the number of views before the photo and it's comments are permanently removed from the server.</p>
+            <div class="overlay__links">
+              <a class="overlay__links-button" href="https://degenerator.surge.sh/">See Live</a>
+              <a class="overlay__links-button" href="https://github.com/thedegenerator">See Code</a>
+            </div>
+          </div>
+        </div>
         <div class="project-grid__item">
           <img class="project-grid__pic" src="/images/twitch.png" alt="" />
           <div class="overlay__twitch">
             <p class="overlay__title">Twitch Clone</p>
-            <p class="overlay__about twitch">In this project, I learned to observe a desired design and replicate it. I learned more about JavaScript and how to fetch from an API to retrieve the information I was looking for. I utilized my responsive designs and made use of media queries to create a dynamic resizable clone.</p>
+            <p class="overlay__about twitch">In this projec, I learned to observe a desired design and replicate it. I learned more about JavaScript and how to fetch from an API to retrieve the information I was looking for. I utilized my responsive designs and made use of media queries to create a dynamic resizable clone.</p>
             <div class="overlay__links">
               <a class="overlay__links-button" href="#">See Live</a>
-              <a class="overlay__links-button" href="#">See Code</a>
+              <a class="overlay__links-button" href="https://github.com/jminbiole/09-twitch-search">See Code</a>
             </div>
           </div>
         </div>
@@ -42,22 +48,31 @@
           <img class="project-grid__pic" src="/images/puppies.png" alt="" />
           <div class="overlay__puppies">
             <p class="overlay__title">Puppies</p>
-            <p class="overlay__about puppies">In this project, I learned how to create a CRUD app and how to toggle features. I furthered my knowledge of responsive design and how to implement user uploads. When a user changes the puppy's information or deletes a puppy, the changes stay after refreshing. This also allows users to grab a GIF or image of a puppy to place as the puppy's picture.</p>
+            <p class="overlay__about puppies">Here, I learned how to create a CRUD app and how to toggle features. I furthered my knowledge of responsive design and how to implement user uploads. When a user changes the puppy's information or deletes a puppy, the changes stay after refreshing.</p>
             <div class="overlay__links">
               <a class="overlay__links-button" href="#">See Live</a>
-              <a class="overlay__links-button" href="#">See Code</a>
+              <a class="overlay__links-button" href="https://github.com/jminbiole/14-puppy-adoption">See Code</a>
             </div>
           </div>
         </div>
-        {{!-- <div class="project-grid__item 4">
-          <img class="project-grid__pic" src="https://s-media-cache-ak0.pinimg.com/564x/55/bf/e7/55bfe77d2f554f94f0c6e7bdd4dbc1de.jpg" alt="" />
-        </div> --}}
+        <div class="project-grid__item">
+          <img class="project-grid__pic" src="/images/run-timer.png" alt="" />
+          <div class="overlay__puppies">
+            <p class="overlay__title">Run Timer</p>
+            <p class="overlay__about puppies">With this application I dove deeper into Ember.js development. This is an app which allows users to keep track of their run times and add notes about the run. I added an additional delete button that was not required so users could delete to keep their runs recent. When you click on the run, you can see the run notes as well as an edit feature.</p>
+            <div class="overlay__links">
+              <a class="overlay__links-button" href="#">See Live</a>
+              <a class="overlay__links-button" href="https://github.com/jminbiole/19-run-timer">See Code</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
   <div class="skills">
     <div class="hero hero__skills">
-      <h1 class="skills__title">Skills</h1>
+      <h1 class="skills__title">| Skills |</h1>
       <div class="skills-list">
         <div class="skills-list__section">
           <li class="skills-list__item">-Ember</li>
@@ -88,7 +103,7 @@
   </div>
   <div class="contact">
     <div class="hero hero__contact">
-      <h1 class="title__contact">Contact Me</h1>
+      <h1 class="title__contact">| Contact |</h1>
       <div class="contact__sources">
 
         <a href="https://github.com/jminbiole">

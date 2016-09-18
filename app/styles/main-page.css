@@ -30,7 +30,7 @@
   }
 }
 .greeting {
-  animation: wat 5s forwards;
+  animation: wat 3s forwards;
   font-size: 4rem;
   color: #fff;
   margin: 0;
@@ -52,19 +52,20 @@
 .title {
 
   &__name {
-    animation: fadeIn 3s forwards;
+    animation: fadeIn 2s forwards;
     color: #fff;
     margin: 0;
   }
 
   &__self {
-    animation: fadeIn 4s forwards;
+    animation: fadeIn 3s forwards;
     color: #fff;
     text-align: right;
   }
 
   &__about {
-    margin: 0;
+    margin: 0 0 1rem 0;
+    text-align: center;
   }
 
   &__project {
@@ -85,6 +86,12 @@
   margin: 0;
   padding: 2rem;
 
+  &__about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+  }
   &.no-flex {
     display: block;
   }
@@ -106,17 +113,30 @@
 /*media query make backgroud grow to right size*/
 
 .textbox__about {
-  width: calc(100% / 2);
-  font-size: 1.5rem;
+  max-width: 70rem;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 1.3rem;
   min-width: 25rem;
-  margin-right: 1rem;
-  max-width: 30rem;
-  flex-grow: 1;
+  position: relative;
 }
 .background__about {
+
+  &-left {
+    margin: 0;
+    width: 100%;
+    text-align: right;
+    padding: 0 1.5rem;
+    border-right: .2rem solid #291C08;
+    font-stretch: expanded;
+  }
+
+  &-right {
   margin: 0;
   width: 100%;
-  padding: 1rem 0;
+  padding: 0 1.5rem;
+}
 }
 .slideshow__about {
   width: calc(100% / 2);
@@ -159,13 +179,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 100vh;
-  /*padding: 1rem 0;*/
   margin: -2rem;
 
-  /*media query on margin*/
   &__item {
     position: relative;
+    flex-grow: 1;
     min-width: 25rem;
     height: 100%;
     max-height: 20rem;
@@ -184,7 +202,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    /*max-height: 20rem;*/
+    max-height: 20rem;
     display: block;
   }
 }
@@ -203,7 +221,6 @@
     justify-content: space-between;
     align-content: flex-end;
     padding: .5rem;
-    margin-bottom: .5rem;
 
     &-button {
       min-width: 4rem;
@@ -223,7 +240,7 @@
 
   &__about {
     flex-grow: 1;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     padding: .5rem;
     margin: 0;
 
@@ -244,7 +261,6 @@
 
 
   &:hover {
-    /*animation: display 1s forwards;*/
     opacity: .9;
   }
 }
@@ -306,14 +322,6 @@
 
 }
 
-@keyframes hide {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
 .box__phone {
   position: relative;
   padding: 1rem 6rem;
@@ -321,9 +329,6 @@
 
   &-text {
     margin: 0;
-  &:hover {
-    animation: hide 2s forwards;
-  }
 }
 }
 .isHideText {
@@ -343,5 +348,9 @@
 footer {
   background: #291C08;
   color: #CFC9B4;
+  text-align: center;
+
+}
+@media only screen and (max-width: 600px) {
 
 }
