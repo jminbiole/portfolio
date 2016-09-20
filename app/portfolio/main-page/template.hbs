@@ -1,4 +1,16 @@
-<div class="app__main">
+  <div class="nav">
+    <a name="welcome"></a>
+    <div class="nav__innards">
+      <a id="#welcome" class="nav__links">Welcome</a>
+      <div class="nav__right">
+        <a href="#about" class="nav__links">About -</a>
+        <a href="#projects" class="nav__links">Projects -</a>
+        <a href="#skills" class="nav__links">Skills -</a>
+        <a href="#contact" class="nav__links">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="app__main">
   <div class="hero__main">
     <div class="textbox__main">
       <h1 class="greeting">welcome.</h1>
@@ -6,6 +18,7 @@
       <h3 class="title__self">Web <span class="span__self">Developer</span></h3>
     </div>
   </div>
+  <a name="about"></a>
   <div class="about-me">
     <div class="hero__about">
       <h1 class="title__about">| About |</h1>
@@ -15,8 +28,21 @@
           <p class="background__about-right">quick thinking to overcome issues that arise in code. I had very little coding experience
           prior to TIY but after working in the agile environment and learning directly from a senior developer, I have the skills to make a great addition to your team. I am Front End focused but I am learning Back End too so I can be a jack of all trades.</p>
       </div>
+      <div class="photo__box">
+        <div class="photo__item">
+          <img class="photo__image" src="http://media1.santabanta.com/full1/Nature/Universe/universe-54a.jpg" alt="" />
+        </div>
+        <div class="photo__item">
+          <p class="photo__resume">resume</p>
+          <img class="photo__image" src="http://media1.santabanta.com/full1/Nature/Universe/universe-54a.jpg" alt="" />
+        </div>
+        <div class="photo__item">
+          <img class="photo__image" src="http://media1.santabanta.com/full1/Nature/Universe/universe-54a.jpg" alt="" />
+        </div>
+      </div>
     </div>
   </div>
+  <a name="projects"></a>
   <div class="projects">
     <div class="hero no-flex">
       <h1 class="title__project">| Projects |</h1>
@@ -37,7 +63,7 @@
           <img class="project-grid__pic" src="/images/twitch.png" alt="" />
           <div class="overlay__projects">
             <p class="overlay__title">Twitch Clone</p>
-            <p class="overlay__about">In this projec, I learned to observe a desired design and replicate it. I learned more about JavaScript and how to fetch from an API to retrieve the information I was looking for. I utilized my responsive designs and made use of media queries to create a dynamic resizable clone.</p>
+            <p class="overlay__about">In this project, I learned to observe a desired design and replicate it. I learned more about JavaScript and how to fetch from an API to retrieve the information I was looking for. I utilized my responsive designs and made use of media queries to create a dynamic, resizable clone.</p>
             <div class="overlay__links">
               <a class="overlay__links-button" href="#">See Live</a>
               <a class="overlay__links-button" href="https://github.com/jminbiole/09-twitch-search">See Code</a>
@@ -70,6 +96,7 @@
       </div>
     </div>
   </div>
+  <a name="skills"></a>
   <div class="skills">
     <div class="hero hero__skills">
       <h1 class="title__skills">| Skills |</h1>
@@ -101,6 +128,7 @@
       </div>
     </div>
   </div>
+  <a name="contact"></a>
   <div class="contact">
     <div class="hero hero__contact">
       <h1 class="title__contact">| Contact |</h1>
@@ -116,9 +144,7 @@
           <div class="box email">email</div>
         </a>
         <button class="box box__phone isHideText" {{action 'display'}}>
-          <p class="box__phone-text ">
-            phone
-          </p>
+          <p class="box__phone-text ">phone</p>
           {{#if isShowNumber}}
             <span class="phone__show isShowNumber">615.788.4726</span>
           {{/if}}
@@ -134,4 +160,4 @@
   </footer>
 </div>
 
-{{liquid-outlet}}
+{{outlet}}

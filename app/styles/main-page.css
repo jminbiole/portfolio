@@ -1,8 +1,39 @@
+.app__main {
+  position: relative;
+  -webkit-transform: translateZ(0);
+}
+.nav {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 3rem;
+  z-index: 100;
+
+  &__innards {
+    display: flex;
+    background: #291C08;
+    opacity: .8;
+    padding: 1rem;
+    justify-content: space-between;
+
+  }
+
+  &__right {
+    /*padding-right: 3rem;*/
+  }
+  &__links {
+    color: #CFC9B4;
+    text-decoration: none;
+  }
+}
+
 .hero__main {
   background-image: url('/images/first.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -127,13 +158,11 @@
   }
 }
 
-/*media query make backgroud grow to right size*/
-
 .textbox__about {
   max-width: 70rem;
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  margin: 2rem auto;
   font-size: 1.3rem;
   min-width: 25rem;
   color: #291C08;
@@ -153,6 +182,33 @@
     margin: 0;
     width: 100%;
     padding: 0 1.5rem;
+  }
+}
+.photo {
+
+  &__box {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__item {
+    flex-wrap: wrap;
+    width: calc(100% / 4);
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    border: .4rem solid #291C08;
+    border-radius: 50%;
+  }
+
+  &__resume {
+    color: #291C08;
+    text-align: center;
+    font-size: 2rem;
   }
 }
 
@@ -257,17 +313,15 @@
 .skills__title {
   margin: 0;
 }
-.skills__container {
-  display: flex;
-  flex-wrap: wrap;
-  min-width: 15rem;
-}
+
 .skills-list {
   justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  height: 23vh;
   color: #291C08;
+  padding: 2rem 0;
 
   &__section {
     width: calc(100% / 5);
@@ -287,8 +341,10 @@
   background: #CFC9B4;
 
   &__sources {
+    min-height: 25vh;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
     margin-top: 1rem;
   }
@@ -313,14 +369,13 @@
   position: relative;
   padding: 1rem 6rem;
   font-size: 1rem;
+  max-height: 3.5rem;
 
   &-text {
     margin: 0;
 }
 }
-.isHideText {
-  /*display: none;*/
-}
+
 .phone__show {
   position: absolute;
   top: 0%;
@@ -350,6 +405,28 @@ footer {
     &__item {
       min-width: 10rem;
       font-size: 1rem;
+    }
+  }
+  .overlay {
+    &__title {
+      font-size: 1.3rem;
+      text-align: center;
+    }
+    &__about {
+      font-size: 1rem;
+      padding: 0 .5rem;
+    }
+  }
+}
+@media only screen and (max-width: 927px) {
+  .overlay {
+    &__title {
+      font-size: 2rem;
+      text-align: center;
+    }
+    &__about {
+      font-size: 1.5rem;
+      padding: 0 .5rem;
     }
   }
 }
@@ -398,7 +475,7 @@ footer {
   .project-grid {
     margin-right: 1rem;
     &__item {
-
+      min-width: 22rem;
     }
   }
   .overlay {
@@ -417,6 +494,7 @@ footer {
 
     &__section {
       margin-left: .5rem;
+      margin-bottom: 1rem;
     }
 
     &__item {
