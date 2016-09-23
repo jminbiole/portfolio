@@ -1,51 +1,58 @@
-  <div class="nav">
-    <a name="welcome"></a>
-    <div class="nav__innards">
-      <a id="#welcome" class="nav__links">Welcome</a>
-      <div class="nav__right">
-        <a href="#about" class="nav__links">About -</a>
-        <a href="#projects" class="nav__links">Projects -</a>
-        <a href="#skills" class="nav__links">Skills -</a>
-        <a href="#contact" class="nav__links">Contact</a>
-      </div>
-    </div>
-  </div>
   <div class="app__main">
   <div class="hero__main">
     <div class="textbox__main">
       <h1 class="greeting">welcome.</h1>
-      <h1 class="title__name">Jeffrey <span class="span__name">Minbiole</span></h1>
-      <h3 class="title__self">Web <span class="span__self">Developer</span></h3>
+      <h2 class="title__name"><span class="first-letter">J</span>effrey <span class="span__name"><span class="first-letter">M</span>inbiole</span></h2>
+      <h3 class="title__self">Web Developer</h3>
+    </div>
+    <div class="arrow-div">
+      <a href="#skills" class="nav__links"><p class="arrow"><i class="fa fa-chevron-circle-down fa-2x" aria-hidden="true"></i></p></a>
+    </div>
+  </div>
+  <a name="skills"></a>
+  <div class="skills">
+    <div class="hero hero__skills">
+      <p class="title__skills"><span class="title">Strengths</span></p>
+      <div class="skills-list">
+        <div class="skills-list__section">
+          <li class="skills-list__item">TDD</li>
+          <li class="skills-list__item">Ember</li>
+          <li class="skills-list__item">JavaScript</li>
+          <li class="skills-list__item">CSS/SASS</li>
+          <li class="skills-list__item">Task Oriented</li>
+          <li class="skills-list__item">Responsive Apps</li>
+          <li class="skills-list__item">CRUD Features</li>
+          <li class="skills-list__item">Communication</li>
+        </div>
+        <div class="skills-list__section">
+          <li class="skills-list__item">Frameworks</li>
+          <li class="skills-list__item">Fast Learner</li>
+          <li class="skills-list__item">Leadership</li>
+          <li class="skills-list__item">Heroku APIs</li>
+          <li class="skills-list__item">Fixes Merge Issues</li>
+          <li class="skills-list__item">HTML5</li>
+          <li class="skills-list__item">Github</li>
+          <li class="skills-list__item">Adonis</li>
+        </div>
+      </div>
     </div>
   </div>
   <a name="about"></a>
   <div class="about-me">
     <div class="hero__about">
-      <h1 class="title__about">| About |</h1>
+      <p class="title__about"><span class="title">Background</span></p>
       <div class="textbox__about">
         <p class="background__about-left"> I am a gaming nerd or enthusiast as I prefer. I love solving puzzles and the "think on your feet" of the multiplayer experience. I graduated from The Iron Yard in pursuit of
           a more fulfilling and rewarding career in the tech industry. Now, I am a web developer who loves coding and I use my love of video game problem solving and</p>
           <p class="background__about-right">quick thinking to overcome issues that arise in code. I had very little coding experience
           prior to TIY but after working in the agile environment and learning directly from a senior developer, I have the skills to make a great addition to your team. I am Front End focused but I am learning Back End too so I can be a jack of all trades.</p>
       </div>
-      <div class="photo__box">
-        <div class="photo__item">
-          <img class="photo__image" src="http://media1.santabanta.com/full1/Nature/Universe/universe-54a.jpg" alt="" />
-        </div>
-        <div class="photo__item">
-          <p class="photo__resume">resume</p>
-          <img class="photo__image" src="http://media1.santabanta.com/full1/Nature/Universe/universe-54a.jpg" alt="" />
-        </div>
-        <div class="photo__item">
-          <img class="photo__image" src="http://media1.santabanta.com/full1/Nature/Universe/universe-54a.jpg" alt="" />
-        </div>
-      </div>
     </div>
   </div>
   <a name="projects"></a>
   <div class="projects">
     <div class="hero no-flex">
-      <h1 class="title__project">| Projects |</h1>
+      <p class="title__project"><span class="title">My Work</span></p>
       <div class="project-grid">
 
         <div class="project-grid__item">
@@ -65,7 +72,7 @@
             <p class="overlay__title">Twitch Clone</p>
             <p class="overlay__about">In this project, I learned to observe a desired design and replicate it. I learned more about JavaScript and how to fetch from an API to retrieve the information I was looking for. I utilized my responsive designs and made use of media queries to create a dynamic, resizable clone.</p>
             <div class="overlay__links">
-              <a class="overlay__links-button" href="#">See Live</a>
+              <a class="overlay__links-button" href="http://jm-twitch.surge.sh/">See Live</a>
               <a class="overlay__links-button" href="https://github.com/jminbiole/09-twitch-search">See Code</a>
             </div>
           </div>
@@ -76,7 +83,7 @@
             <p class="overlay__title">Puppies</p>
             <p class="overlay__about">Here, I learned how to create a CRUD app and how to toggle features. I furthered my knowledge of responsive design and how to implement user uploads. When a user changes the puppy's information or deletes a puppy, the changes stay after refreshing.</p>
             <div class="overlay__links">
-              <a class="overlay__links-button" href="#">See Live</a>
+              <a class="overlay__links-button" href="http://jm-puppies.surge.sh/">See Live</a>
               <a class="overlay__links-button" href="https://github.com/jminbiole/14-puppy-adoption">See Code</a>
             </div>
           </div>
@@ -96,60 +103,81 @@
       </div>
     </div>
   </div>
-  <a name="skills"></a>
-  <div class="skills">
-    <div class="hero hero__skills">
-      <h1 class="title__skills">| Skills |</h1>
-      <div class="skills-list">
-        <div class="skills-list__section">
-          <li class="skills-list__item"><i class="fa fa-angle-double-right fa-fw" aria-hidden="true"></i>Ember</li>
-          <li class="skills-list__item"><i class="fa fa-angle-double-right fa-fw" aria-hidden="true"></i>Responsive Apps</li>
-          <li class="skills-list__item"><i class="fa fa-angle-double-right fa-fw" aria-hidden="true"></i>CSS/SASS</li>
-          <li class="skills-list__item"><i class="fa fa-angle-double-right fa-fw" aria-hidden="true"></i>Task Oriented</li>
-        </div>
-        <div class="skills-list__section">
-          <li class="skills-list__item"><i class="fa fa-angle-double-right fa-fw" aria-hidden="true"></i>JavaScript</li>
-          <li class="skills-list__item"><i class="fa fa-angle-double-right fa-fw" aria-hidden="true"></i>HTML</li>
-          <li class="skills-list__item"><i class="fa fa-angle-double-right fa-fw" aria-hidden="true"></i>CRUD Features</li>
-          <li class="skills-list__item"><i class="fa fa-angle-double-right fa-fw" aria-hidden="true"></i>Communication</li>
-        </div>
-        <div class="skills-list__section">
-          <li class="skills-list__item"><i class="fa fa-angle-double-right fa-fw" aria-hidden="true"></i>Frameworks</li>
-          <li class="skills-list__item"><i class="fa fa-angle-double-right fa-fw" aria-hidden="true"></i>Fast Learner</li>
-          <li class="skills-list__item"><i class="fa fa-angle-double-right fa-fw" aria-hidden="true"></i>Leadership</li>
-          <li class="skills-list__item"><i class="fa fa-angle-double-right fa-fw" aria-hidden="true"></i>TDD</li>
-        </div>
-        <div class="skills-list__section">
-          <li class="skills-list__item"><i class="fa fa-angle-double-right fa-fw" aria-hidden="true"></i>Github</li>
-          <li class="skills-list__item"><i class="fa fa-angle-double-right fa-fw" aria-hidden="true"></i>Fixes Merge Issues</li>
-          <li class="skills-list__item"><i class="fa fa-angle-double-right fa-fw" aria-hidden="true"></i>Adonis</li>
-          <li class="skills-list__item"><i class="fa fa-angle-double-right fa-fw" aria-hidden="true"></i>Heroku APIs</li>
-        </div>
-      </div>
-    </div>
-  </div>
+
   <a name="contact"></a>
   <div class="contact">
     <div class="hero hero__contact">
-      <h1 class="title__contact">| Contact |</h1>
-      <div class="contact__sources">
+      <p class="title__contact"><span class="title">Connect</span></p>
+      <div class="contact__grid">
+        <div class="contact__item">
+          <div class="contact__item-top"><i class="fa fa-github icons" aria-hidden="true"></i></div>
+          <div class="overlay__contacts">
+            <p class="overlay__contacts-message">See my code</p>
+          </div>
+        </div>
 
-        <a href="https://github.com/jminbiole">
-          <div class="box github">github</div>
-        </a>
-        <a href="https://www.linkedin.com/in/jeff-minbiole-a46874b5">
-          <div class="box linked">LinkedIn</div>
-        </a>
-        <a href="mailto:minbiole.jeff@gmail.com?subject=Hello,%20Jeff!%20I%20like%20your%20portfolio!">
-          <div class="box email">email</div>
-        </a>
-        <button class="box box__phone isHideText" {{action 'display'}}>
-          <p class="box__phone-text ">phone</p>
-          {{#if isShowNumber}}
-            <span class="phone__show isShowNumber">615.788.4726</span>
-          {{/if}}
-        </button>
+        <div class="contact__item">
+          <div class="overlay__contacts">
+            <p class="overlay__contacts-message">615.788.4726</p>
+          </div>
+          <div class="contact__item-top"><i class="fa fa-mobile icons" aria-hidden="true"></i></div>
+        </div>
+
+        <div class="contact__item">
+          <div class="contact__item-top"><i class="fa fa-linkedin-square icons" aria-hidden="true"></i></div>
+          <div class="overlay__contacts">
+            <p class="overlay__contacts-message">Connect <br>with me</p>
+          </div>
+        </div>
+
+        <div class="contact__item">
+          <div class="contact__item-top"><i class="fa fa-twitter icons" aria-hidden="true"></i></div>
+          <div class="overlay__contacts">
+            <p class="overlay__contacts-message">Follow</p>
+          </div>
+        </div>
+
+        <div class="contact__item">
+          <div class="contact__item-top"><i class="fa fa-envelope icons" aria-hidden="true"></i></div>
+          <div class="overlay__contacts">
+            <p class="overlay__contacts-message">minbiole.jeff<br>@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact__item">
+          <div class="contact__item-top"><i class="fa fa-instagram icons" aria-hidden="true"></i></div>
+          <div class="overlay__contacts">
+            <p class="overlay__contacts-message">Follow</p>
+          </div>
+        </div>
       </div>
+      {{!-- <div class="contact__sources">
+
+        <div class="contact__direct">
+          <button class="box__phone isHideText" {{action 'display'}}>
+              <p class="box__phone-text hidePhone">phone</p>
+            {{#if isShowNumber}}
+              <span class="phone__show isShowNumber">615.788.4726</span>
+            {{/if}}
+          </button>
+        </div>
+        <div class="contact__media">
+          <a href="https://github.com/jminbiole">
+            <div class="icons"><i class="fa fa-github" aria-hidden="true"></i></div>
+          </a>
+          <a href="https://twitter.com/minbiole_jeff">
+            <div class="icons"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+          </a>
+          <a href="https://www.instagram.com/jeff_boy_r_dee/">
+            <div class="icons"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+          </a>
+          <a href="https://www.linkedin.com/in/jeff-minbiole-a46874b5">
+            <div class="icons"><i class="fa fa-linkedin-square" aria-hidden="true"></i></div>
+          </a>
+          <a href="mailto:minbiole.jeff@gmail.com?subject=Hello,%20Jeff!%20I%20like%20your%20portfolio!">
+            <div class="icons"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+          </a>
+        </div>
+      </div> --}}
     </div>
   </div>
   <footer>

@@ -9,6 +9,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('portfolio', {path: '/'}, function() {
   this.route('main-page', {path: '/'});
+  this.route('resume');
 });
 });
 
