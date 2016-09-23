@@ -170,7 +170,7 @@ $font2: Tahoma, sans-serif;
 .first-letter {
   font-size: 2rem;
 }
-.arrow-div {
+.top-arrow {
   position: absolute;
   left: 50%;
   top: 96%;
@@ -199,6 +199,11 @@ $font2: Tahoma, sans-serif;
     animation: jump .7s infinite;
     color: $dark;
     transform: scale(1.3);
+  }
+}
+.bottom-arrow {
+  &:hover {
+    color: $light;
   }
 }
 
@@ -350,6 +355,7 @@ $font2: Tahoma, sans-serif;
 
 .contact {
   background: $darkest;
+  position: relative;
   &__grid {
     min-height: 25vh;
     display: flex;
