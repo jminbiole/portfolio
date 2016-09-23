@@ -5,7 +5,6 @@ $light: #7896C2;
 $gray: #202020;
 $font1: Helvetica, sans-serif;
 $font2: Tahoma, sans-serif;
-
 .hero {
   display: flex;
   flex-wrap: wrap;
@@ -26,7 +25,7 @@ $font2: Tahoma, sans-serif;
   }
   &__contact {
     flex-direction: column;
-    height: 75vh;
+    min-height: 75vh;
   }
   &__footer {
     padding: 1rem 2rem;
@@ -132,17 +131,13 @@ $font2: Tahoma, sans-serif;
 @keyframes wat {
   from {
     opacity: 1;
-    z-index: 1;
-    transform: scale(1.5);
   }
   to {
     opacity: 0;
-    z-index: -1;
-    transform: scale(.001);
   }
 }
 .greeting {
-  animation: wat 3s forwards;
+  animation: wat 2s forwards;
   font-size: 3rem;
   text-transform: lowercase;
   color: $light;
@@ -176,6 +171,7 @@ $font2: Tahoma, sans-serif;
   top: 96%;
   transform: translate(-50%, -50%);
   color: $light;
+  text-align: center;
 }
 @keyframes jump {
   0% {
@@ -206,7 +202,6 @@ $font2: Tahoma, sans-serif;
     color: $light;
   }
 }
-
 .skills {
   background: $gray;
 }
@@ -235,24 +230,87 @@ $font2: Tahoma, sans-serif;
 .about-me {
   background: $gray;
 }
-
 .textbox__about {
-  max-width: 70rem;
-  display: flex;
-  justify-content: center;
-  margin: 2rem auto;
-  font-size: 1.3rem;
   min-width: 25rem;
-  color: $medium;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 2rem 0;
   font-family: $font1;
+  &-top {
+    position: relative;
+    flex-grow: 2;
+    min-width: 20rem;
+    height: 100%;
+    max-height: 20rem;
+    width: 100%;
+    margin: 1rem;
+    border-top: .4rem solid $medium;
+  }
+  &-left {
+    position: relative;
+    min-width: 20rem;
+    height: 100%;
+    max-height: 20rem;
+    width: calc(100% / 2 - 2.4rem - 2.4rem);
+    margin: 1rem;
+  }
+  &-block {
+    border-right: .4rem solid $medium;
+  }
+  &-right {
+    position: relative;
+    min-width: 20rem;
+    height: 100%;
+    max-height: 20rem;
+    width: calc(100% / 2 - 2.4rem - 2.4rem);
+    margin: 1rem;
+  }
+  &-bottom {
+    position: relative;
+    flex-grow: 2;
+    min-width: 20rem;
+    height: 100%;
+    max-height: 20rem;
+    width: 100%;
+    margin: 1rem;
+    border-bottom: .4rem solid $medium;
+  }
+  &-pic {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 20rem;
+    display: block;
+  }
 }
-.background__about {
+.overlay__about {
+  &-text {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    opacity: 0;
+    background: $medium;
+    color: $gray;
+    transition: opacity 500ms;
+    box-shadow: 0px 1px 6px 3px rgba(77, 112, 163, 1);
+    &:hover {
+      opacity: .97;
+    }
+  }
   &-left {
     margin: 0;
     width: 100%;
     text-align: right;
-    padding: 0 1.5rem;
-    border-right: .2rem solid $medium;
+    padding: 0;
     font-stretch: expanded;
     font-family: $font1;
     line-height: 1.5;
@@ -260,11 +318,17 @@ $font2: Tahoma, sans-serif;
   &-right {
     margin: 0;
     width: 100%;
-    padding: 0 1.5rem;
+    padding: 0;
     font-family: $font1;
     line-height: 1.5;
   }
+  &::before {
+    content: "";
+    display: block;
+    padding-top: calc(100% * 9 / 16);
+  }
 }
+
 .projects {
   background: $gray;
 }
@@ -328,12 +392,6 @@ $font2: Tahoma, sans-serif;
       }
     }
   }
-  &__about {
-    flex-grow: 1;
-    font-size: 1.5rem;
-    padding: .5rem;
-    margin: 0;
-  }
   &__projects {
     display: flex;
     flex-direction: column;
@@ -343,33 +401,44 @@ $font2: Tahoma, sans-serif;
     left: 0;
     height: 100%;
     opacity: 0;
-    background: $light;
-    color: #000;
+    background: $medium;
+    color: $gray;
     transition: opacity 500ms;
     box-shadow: 0px 1px 6px 3px rgba(77, 112, 163, 1);
     &:hover {
-      opacity: .93;
+      opacity: .97;
+    }
+
+    &-about {
+      flex-grow: 1;
+      font-size: 1.5rem;
+      padding: .5rem;
+      margin: 0;
     }
   }
 }
-
 .contact {
   background: $darkest;
+  min-height: 25vh;
   position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   &__grid {
-    min-height: 25vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     flex-grow: 1;
     margin-top: 1rem;
+    width: 100%;
   }
   &__item {
-    width: calc(100% / 3 - 2rem - 2rem);
+    min-width: 10rem;
+    width: calc(100% / 3 - 3rem - 3rem);
+    margin: 1rem;
     background: $dark;
     position: relative;
-    flex-wrap: wrap;
     color: #000;
     &-top {
       padding: 3rem;
@@ -394,7 +463,7 @@ $font2: Tahoma, sans-serif;
   align-content: center;
   justify-content: center;
   text-align: center;
-  padding: 0 .5rem;
+  padding: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -441,6 +510,9 @@ footer {
   }
 }
 @media only screen and (max-width: 927px) {
+  .project-grid {
+    justify-content: center;
+  }
   .overlay {
     &__title {
       font-size: 2rem;
@@ -458,6 +530,12 @@ footer {
   }
 }
 @media only screen and (max-width: 600px) {
+  .nav__innards {
+    justify-content: center;
+  }
+  .nav__right {
+    font-size: .9rem;
+  }
   .greeting {
     font-size: 2.5rem;
     position: absolute;
@@ -476,6 +554,7 @@ footer {
     }
   }
   .no-flex {
+    justify-content: center;
     padding: 1rem;
   }
   .textbox {
@@ -503,7 +582,8 @@ footer {
     }
   }
   .project-grid {
-    margin-right: 1rem;
+    justify-content: center;
+    /*margin-right: 1rem;*/
     &__item {
       min-width: 22rem;
     }
@@ -529,5 +609,22 @@ footer {
   }
   .nav__innards {
     justify-content: center;
+  }
+  .contact {
+    &__grid {
+      margin: 1.5rem 0;
+      justify-content: space-between;
+    }
+    &__item {
+      margin: .5rem 0;
+    }
+  }
+  .overlay__contacts {
+    width: 100%;
+  }
+  .top-arrow {
+    top: 96%;
+    left: 50%;
+    font-size: .8rem;
   }
 }
