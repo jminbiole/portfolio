@@ -3,10 +3,10 @@
   <div class="hero__main">
     <div class="top-arrow">
       <a href="#skills" class="nav__links">
-        <p class="arrow"><i class="fa fa-chevron-circle-down fa-2x" aria-hidden="true"></i></p>
+        <p class="arrow" {{action "scrollToSkills"}}><i class="fa fa-chevron-circle-down fa-2x" aria-hidden="true"></i></p>
       </a>
     </div>
-    <div class="test">
+    <div class="filter">
   </div>
       <div class="textbox__main">
       <h1 class="greeting">welcome.</h1>
@@ -15,7 +15,7 @@
     </div>
   </div>
   <a name="skills"></a>
-  <div class="skills">
+  <div class="skills" id="skills">
     <div class="hero hero__skills">
       <p class="title__skills"><span class="title">Strengths</span></p>
       <div class="skills-list">
@@ -43,7 +43,7 @@
     </div>
   </div>
   <a name="about"></a>
-  <div class="about-me">
+  <div class="about-me" id="about">
     <div class="hero__about">
       <p class="title__about"><span class="title">Background</span></p>
       <div class="textbox__about">
@@ -82,7 +82,7 @@
     </div>
   </div>
   <a name="projects"></a>
-  <div class="projects">
+  <div class="projects" id="projects">
     <div class="hero no-flex">
       <p class="title__project"><span class="title">My Work</span></p>
       <div class="project-grid">
@@ -141,7 +141,7 @@
   </div>
 
   <a name="contact"></a>
-  <div class="contact">
+  <div class="contact" id="contact">
     <div class="hero hero__contact">
       <p class="title__contact"><span class="title">Connect</span></p>
       <div class="contact__grid">
@@ -200,7 +200,7 @@
       </div>
       <div class="top-arrow">
         <a href="#top" class="nav__links">
-          <p class="arrow bottom-arrow"><i class="fa fa-chevron-circle-up fa-2x" aria-hidden="true"></i></p>
+          <p class="arrow bottom-arrow" {{action 'toTop'}}><i class="fa fa-chevron-circle-up fa-2x" aria-hidden="true"></i></p>
         </a>
       </div>
     </div>

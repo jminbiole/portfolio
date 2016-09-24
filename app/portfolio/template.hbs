@@ -2,10 +2,10 @@
     <a name="welcome"></a>
     <div class="nav__innards">
       <div class="nav__right">
-        <a href="#skills" class="nav__links links__border">Strengths</a>
-        {{!-- <a href="#about" class="nav__links">About -</a> --}}
-        <a href="#projects" class="nav__links links__border">My Work</a>
-        <a href="#contact" class="nav__links">Connect</a>
+        <a href="#skills" class="nav__links links__border" {{action "scrollToSkills"}}>Strengths</a>
+        <a href="#about" class="nav__links" {{action "scrollToAbout"}}>Background</a>
+        <a href="#projects" class="nav__links links__border" {{action "scrollToProjects"}}>My Work</a>
+        <a href="#contact" class="nav__links" {{action "scrollToContact"}}>Connect</a>
       </div>
     </div>
   </div>

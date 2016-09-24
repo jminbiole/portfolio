@@ -118,7 +118,7 @@ $font2: Tahoma, sans-serif;
   align-items: center;
   position: relative;
 }
-.test {
+.filter {
   height: 100vh;
   width: 100%;
   background: $dark;

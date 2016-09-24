@@ -24,6 +24,23 @@ export default Ember.Controller.extend({
    Ember.$(`html, body`).animate({
      scrollTop: Ember.$(`#skills`).offset().top,
    }, 700);
-  },
+ },
+      scrollToAbout() {
+   Ember.$(`html, body`).animate({
+     scrollTop: Ember.$(`#about`).offset().top,
+   }, 700);
+ },
+
+ scrollToContact() {
+   Ember.$(`html, body`).animate({
+     scrollTop: Ember.$(`#contact`).offset().top,
+   }, 700);
+ },
+
+ scrollToProjects() {
+   Ember.$(`html, body`).animate({
+     scrollTop: Ember.$(`#projects`).offset().top,
+   }, 700);
+ },
   }
 });
