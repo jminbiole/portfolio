@@ -545,9 +545,14 @@ footer {
 @media only screen and (max-width: 600px) {
   .nav__innards {
     justify-content: center;
+    flex-wrap: 1;
+    padding: .7rem;
   }
   .nav__right {
-    font-size: .9rem;
+    font-size: .8rem;
+  }
+  .nav__links-media {
+    display: none;
   }
   .greeting {
     font-size: 2.5rem;
@@ -566,20 +571,23 @@ footer {
   &__about {
     padding: 0;
     padding-bottom: 2rem;
-    margin: 0;
+    margin: 2rem 0;
   }
   &__project {
     padding: 0;
-    padding-bottom: 3rem;
-    margin: 0;
+    padding: 2rem 0;
+    margin: 2rem 0;
+  }
+  &__contact {
+    padding: 2rem 0;
   }
   }
   .contact__sources {
     justify-content: center;
   }
   .hero {
-    &__about, &__skills {
-      padding: .5rem;
+    &__about, &__skills, &__projects {
+      padding: 3rem .5rem;
     }
   }
   .no-flex {
@@ -655,5 +663,8 @@ footer {
     top: 96%;
     left: 50%;
     font-size: .8rem;
+  }
+  .hero__footer {
+    padding: .5rem;
   }
 }

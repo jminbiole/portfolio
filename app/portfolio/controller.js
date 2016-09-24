@@ -4,7 +4,6 @@ export default Ember.Controller.extend({
   actions: {
       classNames: ['back-to-top'],
       tagName: 'footer',
-
       time: 500,
 
       didInsertElement() {
@@ -23,24 +22,24 @@ export default Ember.Controller.extend({
       scrollToSkills() {
    Ember.$(`html, body`).animate({
      scrollTop: Ember.$(`#skills`).offset().top,
-   }, 700);
+   }, this.time);
  },
       scrollToAbout() {
    Ember.$(`html, body`).animate({
      scrollTop: Ember.$(`#about`).offset().top,
-   }, 700);
+   }, this.time);
  },
 
  scrollToContact() {
    Ember.$(`html, body`).animate({
      scrollTop: Ember.$(`#contact`).offset().top,
-   }, 700);
+   }, this.time);
  },
 
  scrollToProjects() {
    Ember.$(`html, body`).animate({
      scrollTop: Ember.$(`#projects`).offset().top,
-   }, 700);
+   }, this.time);
  },
   }
 });
