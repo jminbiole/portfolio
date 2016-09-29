@@ -1,0 +1,29 @@
+@import "variables";
+.skills {
+  background: $light;
+}
+.skills-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: auto;
+  color: $medium;
+  padding: 3rem 0;
+  &__section {
+    min-width: 8rem;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+
+    &-right {
+      text-align: right;
+    }
+  }
+  &__item {
+    font-size: 1.3rem;
+    padding-top: .5rem;
+    list-style: none;
+    background: $gray;
+  }
+}
