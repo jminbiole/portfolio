@@ -1,0 +1,82 @@
+@import "variables";
+.contact {
+  background: $darkest;
+  min-height: 25vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+    margin-top: 1rem;
+    width: 100%;
+  }
+  &__item {
+    min-width: 10rem;
+    width: calc(100% / 3 - 3rem - 3rem);
+    margin: 1rem;
+    background: $dark;
+    position: relative;
+    color: #000;
+    &-top {
+      padding: 3rem;
+      justify-content: center;
+      text-align: center;
+    }
+    &-text {
+      margin: 0;
+      text-align: center;
+      width: 100%;
+      font-size: 1.5rem;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+.overlay__contacts {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background: $gray;
+  color: #000;
+  transition: opacity 500ms;
+  &:hover {
+    opacity: .9;
+  }
+  &-message {
+    color: $medium;
+    font-size: 1.5rem;
+  }
+}
+.icons {
+  width: 100%;
+  font-size: 5rem;
+
+  &__about {
+    margin: 2rem;
+    font-size: 5rem;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+footer {
+  background: #000;
+  color: $medium;
+  text-align: center;
+  font-family: $font1;
+}
