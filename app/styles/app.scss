@@ -1,10 +1,11 @@
 @import "about";
 @import "contact";
 @import "landing";
+@import "nav";
 @import "projects";
+@import "responsive";
 @import "skills";
 @import "variables";
-@import "iPhone6s";
 body{
   margin: 0;
   font-family: sans-serif;
@@ -29,6 +30,7 @@ body{
     justify-content: center;
     flex-direction: column;
     padding: 2rem;
+    min-height: 75vh;
   }
   &.no-flex {
     display: block;
@@ -36,6 +38,8 @@ body{
   &__skills {
     padding: 3rem 2rem;
     flex-direction: column;
+    min-height: 75vh;
+
   }
   &__contact {
     flex-direction: column;
@@ -46,77 +50,57 @@ body{
   }
 }
 .title {
-  border: .4rem double $medium;
-  border-bottom: none;
-  border-top: none;
-  border-radius: 10%;
-  padding: .1rem .7rem;
   font-size: 1.5rem;
   text-transform: uppercase;
   font-family: $font2;
   &__name {
     animation: fadeIn 2s forwards;
-    color: $light;
+    color: $darkest;
     margin: 0;
     font-family: $font1;
+    text-transform: uppercase;
   }
   &__self {
     animation: fadeIn 3.5s forwards;
-    color: $light;
-    text-align: right;
+    color: $dark;
     font-family: $font1;
   }
   &__about {
     text-align: center;
-    color: $medium;
-    padding: 2rem 0;
+    margin: 0;
+    color: $darkest;
+    font-size: $heading;
+    text-transform: uppercase;
   }
   &__project {
     text-align: center;
-    color: $medium;
-    padding: 2rem;
+    margin: 0;
+    color: $darkest;
+    font-size: $heading;
+    text-transform: uppercase;
   }
   &__skills {
     text-align: center;
     margin: 0;
-    color: $medium;
-    padding: 2rem 0;
+    color: $darkest;
+    font-size: $heading;
+    text-transform: uppercase;
   }
   &__contact {
     text-align: center;
     margin: 0;
-    color: $medium;
+    color: $darkest;
+    font-size: $heading;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    font-size: $regular;
+    font-style: italic;
+    color: $dark;
+    text-align: center;
+    margin: .5rem 0;
   }
 }
-.nav {
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  z-index: 100;
-  font-family: $font1;
-  text-transform: uppercase;
-  &__innards {
-    display: flex;
-    justify-content: flex-end;
-    background: #000;
-    padding: 1.2rem;
-    font-size: 1.1rem;
-  }
-  &__right {
-    border: .4rem double $medium;
-    border-bottom: none;
-    border-top: none;
-    border-radius: 7%;
-    padding: .6rem 0;
-  }
-  &__links {
-    color: $medium;
-    text-decoration: none;
-    padding: 0 1rem;
-    margin: 0;
-  }
-}
-.links__border {
-  border-right: .2rem solid $medium;
+.titlebox {
+  padding: 3rem 0;
 }

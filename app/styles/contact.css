@@ -1,6 +1,7 @@
 @import "variables";
+
 .contact {
-  background: $darkest;
+  background: #eee;
   min-height: 25vh;
   position: relative;
   display: flex;
@@ -16,22 +17,17 @@
     width: 100%;
   }
   &__item {
-    min-width: 10rem;
-    width: calc(100% / 3 - 3rem - 3rem);
+    min-width: 5rem;
+    width: calc(100% / 5 - 3rem - 3rem);
     margin: 1rem;
-    background: $dark;
+    border-radius: 50%;
+    background: $medium;
     position: relative;
     color: #000;
     &-top {
-      padding: 3rem;
+      padding: 1rem;
       justify-content: center;
       text-align: center;
-    }
-    &-text {
-      margin: 0;
-      text-align: center;
-      width: 100%;
-      font-size: 1.5rem;
     }
   }
   &__link {
@@ -47,29 +43,30 @@
   text-align: center;
   padding: 0;
   position: absolute;
+  border-radius: 50%;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   opacity: 0;
-  background: $gray;
+  background: $darkest;
   color: #000;
   transition: opacity 500ms;
   &:hover {
-    opacity: .9;
+    opacity: .95;
   }
   &-message {
     color: $medium;
-    font-size: 1.5rem;
+    font-size: .8rem;
   }
 }
 .icons {
   width: 100%;
-  font-size: 5rem;
+  font-size: 3rem;
 
   &__about {
     margin: 2rem;
-    font-size: 5rem;
+    font-size: 2rem;
     text-align: center;
     vertical-align: middle;
   }

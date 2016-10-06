@@ -2,10 +2,10 @@
   <a name="welcome"></a>
   <div class="nav__innards">
     <div class="nav__right">
-      <a href="#skills" class="nav__links links__border nav__links-media" {{action "scrollToSkills"}}>Strengths</a>
-      <a href="#about" class="nav__links links__border" {{action "scrollToAbout"}}>Background</a>
+      <a href="#skills" class="nav__links links__border nav__links-media" {{action "scrollToSkills"}}>Skills</a>
       <a href="#projects" class="nav__links links__border" {{action "scrollToProjects"}}>My Work</a>
-      <a href="#contact" class="nav__links" {{action "scrollToContact"}}>Connect</a>
+      <a href="#about" class="nav__links links__border" {{action "scrollToAbout"}}>About</a>
+      <a href="#contact" class="nav__links" {{action "scrollToContact"}}>Contact</a>
     </div>
   </div>
 </div>
@@ -24,85 +24,64 @@
         <h3 class="title__self">Web Developer</h3>
       </div>
       <div class="img-container">
-        <img class="main-img" src="/images/mirrored.jpg" alt="" />
       </div>
     </div>
   </div>
   <a name="skills"></a>
   <div class="skills" id="skills">
     <div class="hero hero__skills">
-      <p class="title__skills"><span class="title">Strengths</span></p>
+      <div class="titlebox">
+        <p class="title__skills"><span class="title">Skills</span></p>
+        <p class="title__subtitle">What I do.</p>
+      </div>
       <div class="skills-list">
         <div class="skills-list__section">
-          <li class="skills-list__item">TDD</li>
-          <li class="skills-list__item">Ember</li>
-          <li class="skills-list__item">JavaScript</li>
-          <li class="skills-list__item">CSS/SASS</li>
-          <li class="skills-list__item">Fast Learner</li>
-          <li class="skills-list__item">CRUD Features</li>
-          <li class="skills-list__item">Communication</li>
-          <li class="skills-list__item">Task Oriented</li>
+          <div class="textbox__subhead">
+            <div class="skills-list__icons"><i class="fa fa-laptop" aria-hidden="true"></i></div>
+            <h3 class="skills-list__category">Front End</h3>
+          </div>
+          <div class="skills-list__list">
+            <li class="skills-list__item">Ember</li>
+            <li class="skills-list__item">JavaScript</li>
+            <li class="skills-list__item">CSS/SASS</li>
+            <li class="skills-list__item">HTML5</li>
+          </div>
         </div>
-        <div class="skills-list__section skills-list__section-right">
-          <li class="skills-list__item">Heroku APIs</li>
-          <li class="skills-list__item">Frameworks</li>
-          <li class="skills-list__item">Leadership</li>
-          <li class="skills-list__item">Fixes Merge Issues</li>
-          <li class="skills-list__item">Responsive Apps</li>
-          <li class="skills-list__item">HTML5</li>
-          <li class="skills-list__item">Github</li>
-          <li class="skills-list__item">Adonis</li>
+        <div class="skills-list__section">
+          <div class="textbox__subhead">
+            <div class="skills-list__icons"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
+            <h3 class="skills-list__category">Experience</h3>
+          </div>
+          <div class="skills-list__list">
+            <li class="skills-list__item">Responsive</li>
+            <li class="skills-list__item">Leadership</li>
+            <li class="skills-list__item">Fast Learner</li>
+            <li class="skills-list__item">Communication</li>
+          </div>
+        </div>
+        <div class="skills-list__section">
+          <div class="textbox__subhead">
+            <div class="skills-list__icons"><i class="fa fa-wrench" aria-hidden="true"></i></div>
+            <h3 class="skills-list__category">Tools</h3>
+          </div>
+          <div class="skills-list__list">
+            <li class="skills-list__item">Heroku APIs</li>
+            <li class="skills-list__item">Frameworks</li>
+            <li class="skills-list__item">Surge</li>
+            <li class="skills-list__item">Github</li>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <a name="about"></a>
-  <div class="about-me" id="about">
-    <div class="hero__about">
-      <p class="title__about"><span class="title">Background</span></p>
-      <div class="textbox__about">
 
-        <div class="textbox__about-top">
-          <p class="icons__about"><i class="fa fa-male" aria-hidden="true"></i></p>
-          <div class="overlay__about">
-            <p class="overlay__about-text overlay__about-text__media">Hello, my name is Jeff. I am a web developer in the Nashville area. I am a father and husband who works hard for what he wants. I have great leadership and communication skills with a drive to succeed and grow as I continue coding through
-              the years. I have been coding for a while now and I find it relaxing and enjoyable, even during the hang ups. When I am not coding I am spending time with my family or I am playing which every video game I am playing through. </p>
-          </div>
-        </div>
-
-        <div class="textbox__about-left">
-          <p class="icons__about"><i class="fa fa-gamepad" aria-hidden="true"></i></p>
-          <div class="overlay__about">
-            <p class="overlay__about-text">I am a game nerd and I have been one since I got an N64 when I was 8. Since then, I have fallen in love with so many different worlds, lived many lives and solved more puzzles than can be accounted for. I enjoy the challenges and I persist
-              through the struggles until I accomplish my goals.</p>
-          </div>
-        </div>
-
-        <div class="textbox__about-block"></div>
-
-        <div class="textbox__about-right">
-          <p class="icons__about"><i class="fa fa-users" aria-hidden="true"></i></p>
-          <div class="overlay__about">
-            <p class="overlay__about-text">I have worked in restaurants, retail and the financial world, all had great aspects but were ultimately unfulfilling. I worked my way up many management ladders and found the ceiling was a lot lower than I thought. I knew that it was time
-              to find a rewarding career.</p>
-          </div>
-        </div>
-
-        <div class="textbox__about-bottom">
-          <p class="icons__about"><i class="fa fa-graduation-cap" aria-hidden="true"></i></p>
-          <div class="overlay__about">
-            <p class="overlay__about-text overlay__about-text__media">Now, I am a web developer who loves coding and I use my love of video game problem solving to overcome my coding challenges. I graduated from The Iron Yard in pursuit of a more fulfilling and rewarding career in the tech industry, bringing
-              with me all the skills I have honed from my previous work. I am looking forward to contributing to the community with clean, organized code and growing it by showing my passion for coding to others.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
   <a name="projects"></a>
   <div class="projects" id="projects">
     <div class="hero no-flex">
-      <p class="title__project"><span class="title">My Work</span></p>
+      <div class="titlebox">
+        <p class="title__project"><span class="title">Projects</span></p>
+        <p class="title__subtitle">What I've done.</p>
+      </div>
       <div class="project-grid">
 
         <div class="project-grid__item">
@@ -157,11 +136,49 @@
       </div>
     </div>
   </div>
+  <a name="about"></a>
+  <div class="about-me" id="about">
+    <div class="hero__about">
+      <div class="titlebox">
+        <p class="title__about"><span class="title">About</span></p>
+        <p class="title__subtitle">Who I am.</p>
+      </div>
+      <div class="textbox">
 
+        <div class="textbox__about">
+          <div class="textbox__subhead">
+            <div class="skills-list__icons"><i class="fa fa-file-text-o" aria-hidden="true"></i></div>
+            <p class="textbox__subhead-text">Summary</p>
+          </div>
+          <p class="textbox__about-text">I have spent the last three months diving into coding and have discovered how much I really love it. I have finally found work which is enjoyable and exciting. I am looking forward to the future and can't wait to learn more.</p>
+        </div>
+
+        <div class="textbox__about">
+          <div class="textbox__subhead">
+            <div class="skills-list__icons"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+            <p class="textbox__subhead-text">Work History</p>
+          </div>
+          <p class="textbox__about-text">I have been a manager for most of my career which has given my many team building and leadership sklls. I started as an assitant manager at GameStop, ran a Jimmy John's store and then was a Branch Manager for Advance Financial.</p>
+        </div>
+        <div class="textbox__about">
+          <div class="textbox__subhead">
+            <div class="skills-list__icons"><i class="fa fa-binoculars" aria-hidden="true"></i></div>
+            <p class="textbox__subhead-text">Looking Ahead</p>
+          </div>
+          <p class="textbox__about-text">Now, I am looking forward to a career coding and creating dynamic, responsive web designs for my customers. I want to bring my experience from my past to enhance my abilities to succeed in the industry.</p>
+        </div>
+
+      </div>
+      <div class="resume">
+        <a class="resume-link" href="/pdf/JeffreyMinbioleres.docx.pdf">Resumé</a>
+      </div>
+    </div>
+  </div>
   <a name="contact"></a>
   <div class="contact" id="contact">
     <div class="hero hero__contact">
-      <p class="title__contact"><span class="title">Connect</span></p>
+      <p class="title__contact"><span class="title">Contact</span></p>
+      <p class="title__subtitle">Let's talk.</p>
       <div class="contact__grid">
         <div class="contact__item">
           <a class="contact__link" href="https://github.com/jminbiole">
@@ -207,14 +224,7 @@
             </div>
           </a>
         </div>
-        <div class="contact__item">
-          <a class="contact__link" href="/pdf/JeffreyMinbioleres.docx.pdf">
-            <div class="contact__item-top"><i class="fa fa-file-text icons" aria-hidden="true"></i></div>
-            <div class="overlay__contacts">
-              <p class="overlay__contacts-message">Resumé</p>
-            </div>
-          </a>
-        </div>
+
       </div>
       <div class="top-arrow">
         <a href="#top" class="nav__links">

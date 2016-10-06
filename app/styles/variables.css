@@ -1,7 +1,14 @@
-$darkest: #0E3063;
-$dark: #1D447D;
-$medium: #4D70A3;
-$light: #7896C2;
+$darkest: #007A80;
+$dark: #47969A;
+$medium: #55CED4;
+$light: #99DEE1;
+$lightest: #BAF8FB;
+$lightgray: #CACFD5;
 $gray: #202020;
+
 $font1: "Merriweather Sans", sans-serif;
 $font2:  sans-serif;
+
+$heading: 2rem;
+$subhead: 1.5rem;
+$regular: 1.2rem;
