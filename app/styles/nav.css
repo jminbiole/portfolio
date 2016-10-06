@@ -5,7 +5,7 @@
   left: 0%;
   width: 100%;
   z-index: 100;
-  font-family: $font1;
+  font-family: var(--font1);
   text-transform: uppercase;
   &__innards {
     display: flex;

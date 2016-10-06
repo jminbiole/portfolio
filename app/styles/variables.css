@@ -6,9 +6,7 @@ $lightest: #BAF8FB;
 $lightgray: #CACFD5;
 $gray: #202020;
 
-$font1: "Merriweather Sans", sans-serif;
-$font2:  sans-serif;
 
 $heading: 2rem;
 $subhead: 1.5rem;
-$regular: 1.2rem;
+$regular: 1rem;

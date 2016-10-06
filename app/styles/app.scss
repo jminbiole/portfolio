@@ -6,6 +6,10 @@
 @import "responsive";
 @import "skills";
 @import "variables";
+html {
+  --font1: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  --font2: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
 body{
   margin: 0;
   font-family: sans-serif;
@@ -18,7 +22,7 @@ body{
   margin: 0;
   padding: 2rem;
   &__main {
-    background: #fff;
+    background: #eee;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -34,6 +38,7 @@ body{
   }
   &.no-flex {
     display: block;
+    padding: 0;
   }
   &__skills {
     padding: 3rem 2rem;
@@ -50,25 +55,26 @@ body{
   }
 }
 .title {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  font-family: $font2;
+  font-size: $heading;
+  font-family: var(--font1);
   &__name {
     animation: fadeIn 2s forwards;
     color: $darkest;
     margin: 0;
-    font-family: $font1;
+    font-family: var(--font1);
     text-transform: uppercase;
+    font-size: 3rem;
   }
   &__self {
     animation: fadeIn 3.5s forwards;
     color: $dark;
-    font-family: $font1;
+    font-family: var(--font1);
+    font-size: $heading;
   }
   &__about {
     text-align: center;
     margin: 0;
-    color: $darkest;
+    color: #fff;
     font-size: $heading;
     text-transform: uppercase;
   }
@@ -92,13 +98,6 @@ body{
     color: $darkest;
     font-size: $heading;
     text-transform: uppercase;
-  }
-  &__subtitle {
-    font-size: $regular;
-    font-style: italic;
-    color: $dark;
-    text-align: center;
-    margin: .5rem 0;
   }
 }
 .titlebox {

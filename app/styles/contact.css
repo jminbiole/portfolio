@@ -75,5 +75,5 @@ footer {
   background: #000;
   color: $medium;
   text-align: center;
-  font-family: $font1;
+  font-family: var(--font1);
 }

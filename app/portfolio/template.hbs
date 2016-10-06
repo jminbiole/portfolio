@@ -2,9 +2,9 @@
   <a name="welcome"></a>
   <div class="nav__innards">
     <div class="nav__right">
-      <a href="#skills" class="nav__links links__border nav__links-media" {{action "scrollToSkills"}}>Skills</a>
-      <a href="#projects" class="nav__links links__border" {{action "scrollToProjects"}}>My Work</a>
-      <a href="#about" class="nav__links links__border" {{action "scrollToAbout"}}>About</a>
+      <a href="#skills" class="nav__links nav__links-media" {{action "scrollToSkills"}}>Skills</a>
+      <a href="#projects" class="nav__links" {{action "scrollToProjects"}}>My Work</a>
+      <a href="#about" class="nav__links" {{action "scrollToAbout"}}>About</a>
       <a href="#contact" class="nav__links" {{action "scrollToContact"}}>Contact</a>
     </div>
   </div>
@@ -19,9 +19,9 @@
     </div>
     <div class="main-container">
       <div class="textbox__main">
-        <h1 class="greeting">welcome.</h1>
-        <h2 class="title__name"><span class="first-letter">J</span>effrey <span class="span__name"><span class="first-letter">M</span>inbiole</span></h2>
-        <h3 class="title__self">Web Developer</h3>
+        <p class="greeting">welcome.</p>
+        <p class="title__name"><span class="first-letter">J</span>effrey <span class="span__name"><span class="first-letter">M</span>inbiole</span></p>
+        <p class="title__self">Web Developer</p>
       </div>
       <div class="img-container">
       </div>
@@ -32,13 +32,13 @@
     <div class="hero hero__skills">
       <div class="titlebox">
         <p class="title__skills"><span class="title">Skills</span></p>
-        <p class="title__subtitle">What I do.</p>
       </div>
       <div class="skills-list">
         <div class="skills-list__section">
           <div class="textbox__subhead">
             <div class="skills-list__icons"><i class="fa fa-laptop" aria-hidden="true"></i></div>
-            <h3 class="skills-list__category">Front End</h3>
+            <p class="skills-list__category">Front End</p>
+            <hr>
           </div>
           <div class="skills-list__list">
             <li class="skills-list__item">Ember</li>
@@ -50,7 +50,8 @@
         <div class="skills-list__section">
           <div class="textbox__subhead">
             <div class="skills-list__icons"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
-            <h3 class="skills-list__category">Experience</h3>
+            <p class="skills-list__category">Experience</p>
+            <hr>
           </div>
           <div class="skills-list__list">
             <li class="skills-list__item">Responsive</li>
@@ -62,7 +63,8 @@
         <div class="skills-list__section">
           <div class="textbox__subhead">
             <div class="skills-list__icons"><i class="fa fa-wrench" aria-hidden="true"></i></div>
-            <h3 class="skills-list__category">Tools</h3>
+            <p class="skills-list__category">Tools</p>
+            <hr>
           </div>
           <div class="skills-list__list">
             <li class="skills-list__item">Heroku APIs</li>
@@ -72,18 +74,13 @@
           </div>
         </div>
       </div>
+      <a name="projects" id="projects"></a>
     </div>
   </div>
 
-  <a name="projects"></a>
-  <div class="projects" id="projects">
+  <div class="projects" >
     <div class="hero no-flex">
-      <div class="titlebox">
-        <p class="title__project"><span class="title">Projects</span></p>
-        <p class="title__subtitle">What I've done.</p>
-      </div>
       <div class="project-grid">
-
         <div class="project-grid__item">
           <img class="project-grid__pic" src="/images/degenerator.png" alt="" />
           <div class="overlay__projects">
@@ -141,7 +138,6 @@
     <div class="hero__about">
       <div class="titlebox">
         <p class="title__about"><span class="title">About</span></p>
-        <p class="title__subtitle">Who I am.</p>
       </div>
       <div class="textbox">
 
@@ -149,23 +145,26 @@
           <div class="textbox__subhead">
             <div class="skills-list__icons"><i class="fa fa-file-text-o" aria-hidden="true"></i></div>
             <p class="textbox__subhead-text">Summary</p>
+            <hr class="hr-about">
           </div>
-          <p class="textbox__about-text">I have spent the last three months diving into coding and have discovered how much I really love it. I have finally found work which is enjoyable and exciting. I am looking forward to the future and can't wait to learn more.</p>
+          <p class="textbox__about-text">The last three months of my life have been devoted to coding, and I’ve discovered how much I love it. I've finally found work that’s enjoyable and offers me a future of learning and growth.</p>
         </div>
 
         <div class="textbox__about">
           <div class="textbox__subhead">
             <div class="skills-list__icons"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
             <p class="textbox__subhead-text">Work History</p>
+            <hr class="hr-about">
           </div>
-          <p class="textbox__about-text">I have been a manager for most of my career which has given my many team building and leadership sklls. I started as an assitant manager at GameStop, ran a Jimmy John's store and then was a Branch Manager for Advance Financial.</p>
+          <p class="textbox__about-text">I’ve been a manager for most of my career, giving me extensive experience in building and leading teams. I’m a confident communicator and am adept at solving tough problems.</p>
         </div>
         <div class="textbox__about">
           <div class="textbox__subhead">
             <div class="skills-list__icons"><i class="fa fa-binoculars" aria-hidden="true"></i></div>
             <p class="textbox__subhead-text">Looking Ahead</p>
+            <hr class="hr-about">
           </div>
-          <p class="textbox__about-text">Now, I am looking forward to a career coding and creating dynamic, responsive web designs for my customers. I want to bring my experience from my past to enhance my abilities to succeed in the industry.</p>
+          <p class="textbox__about-text">Now my career as a web developer begins! I want to create dynamic, responsive web products, and am excited to contribute to the Nashville tech community.</p>
         </div>
 
       </div>
@@ -178,7 +177,6 @@
   <div class="contact" id="contact">
     <div class="hero hero__contact">
       <p class="title__contact"><span class="title">Contact</span></p>
-      <p class="title__subtitle">Let's talk.</p>
       <div class="contact__grid">
         <div class="contact__item">
           <a class="contact__link" href="https://github.com/jminbiole">
