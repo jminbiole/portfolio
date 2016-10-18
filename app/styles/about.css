@@ -10,10 +10,9 @@
   &__about {
   display: flex;
   flex-wrap: wrap;
-  margin: 1rem auto;
+  margin: 1rem;
   font-family: var(--font1);
   width: 100%;
-  margin: 0 1rem;
 
   &-text {
     text-align: center;

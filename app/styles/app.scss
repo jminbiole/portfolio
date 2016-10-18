@@ -103,3 +103,10 @@ body{
 .titlebox {
   padding: 3rem 0;
 }
+
+@media screen and (max-width: 775px){
+  .textbox__main {
+      font-size: 1rem;
+      color: red;
+    }
+  }
