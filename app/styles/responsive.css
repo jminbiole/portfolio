@@ -66,7 +66,52 @@
   font-size: 1rem;
   color: red;
 }
+@media only screen and (max-width: 737px){
+  .nav__innards {
+    justify-content: center;
+  }
+  .img-container {
+    width: 180px;
+    height: 180px;
+    margin: 2rem 0 0 0;
+  }
+}
+.title {
+  &__self {
+  margin: -1rem;
+}
 
+}
+.first-letter {
+  font-size: 2rem;
+}
+.span {
+
+  &__name {
+  font-size: 1.5rem;
+}
+}
+.developer {
+  font-size: 1.3rem;
+}
+.textbox__main {
+  text-align: center;
+  margin: 0;
+}
+.title__box {
+  padding: 0;
+}
+.skills-list {
+  padding: 0;
+}
+.overlay {
+  &__title {
+    font-size: 1.5rem;
+  }
+  &__projects-about {
+      font-size: .75rem;
+    }
+}
 
 @media screen and (max-width: 414px) {
   .nav__innards {
@@ -338,8 +383,12 @@
     }
   }
   .skills-list {
-    justify-content: center;
-    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: var(--font1);
+    width: 100%;
+    margin: 0 1rem;
+
     &__item {
       min-width: 10rem;
       font-size: .9rem;
