@@ -8,7 +8,7 @@
   flex-wrap: wrap;
   align-items: center;
   text-align: center;
-  width: cal(100% / 3);
+  width: 100%;
   margin: auto;
   padding: 3.5rem 0;
   &__section {
@@ -16,6 +16,7 @@
     min-width: 10rem;
     margin: 1rem 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
   }
