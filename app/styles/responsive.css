@@ -269,7 +269,7 @@
     }
     &__item {
       margin: .5rem 0;
-      width: calc(100% / 2 - 1.5rem - 1.5rem);
+      width: calc(100% / 2 - 2rem - 2rem);
 
       &-top {
         padding: 2rem;
@@ -283,7 +283,7 @@
     width: 100%;
   }
   .top-arrow {
-    top: 94%;
+    top: 97%;
     left: 50%;
     font-size: .8rem;
   }
