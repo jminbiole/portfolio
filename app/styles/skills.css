@@ -5,15 +5,14 @@
 .skills-list {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
   align-items: center;
   text-align: center;
   width: 100%;
   margin: auto;
-  padding: 3.5rem 0;
+  padding: 3rem 0;
   &__section {
     min-width: 10rem;
-    margin: 1rem 0;
+    margin: 1rem 1rem 0 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

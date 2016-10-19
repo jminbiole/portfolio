@@ -76,6 +76,10 @@
     margin: 2rem 0 0 0;
   }
 }
+.greeting {
+  top: 25%;
+  right: 5%;
+}
 .title {
   &__self {
   margin: -1rem;
@@ -98,21 +102,33 @@
   text-align: center;
   margin: 0;
 }
-.title__box {
-  padding: 0;
+.titlebox {
+  padding: 2rem 0 0 0 !important;
 }
 .skills-list {
-  padding: 0;
+  padding: 0rem !important;
+
+  &__section {
+    flex-wrap: nowrap;
+  }
 }
 .overlay {
   &__title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   &__projects-about {
       font-size: .75rem;
     }
 }
-
+.title__about {
+  padding-top: .5rem;
+}
+.hero__contact {
+  padding: 4.5rem 0 0 0 !important;
+}
+.contact__grid {
+  margin: 0;
+}
 @media screen and (max-width: 414px) {
   .nav__innards {
     justify-content: center;
@@ -127,9 +143,8 @@
   }
   .greeting {
     font-size: 2.5rem;
-    position: absolute;
-    top: 0;
-    left: 10%;
+    top: 25%;
+    left: 5%;
   }
   .img-container {
     width: 300px;
@@ -137,18 +152,17 @@
     margin: auto;
   }
   .span__name {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .developer {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .first-letter {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
   .title__self {
     text-align: center;
     justify-content: center;
-    font-size: 1rem;
     margin: 0;
   }
   &__skills {
@@ -287,14 +301,10 @@
   }
   .nav__right {
   }
-  /*.nav__links {
-    padding:
-  }*/
   .greeting {
     font-size: 2.5rem;
-    position: absolute;
-    top: 0;
-    left: 10%;
+    top: 25%;
+    left: 5%;
   }
   .title {
 
